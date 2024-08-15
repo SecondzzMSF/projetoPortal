@@ -6,9 +6,10 @@
   }
 
   .card {
-    position: relative;
+
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
     &::before {
       content: "";
       position: absolute;
@@ -19,6 +20,21 @@
         transparent 0%,
         #020617 100%
       );
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+
+      padding: 24px;
+
+      &:has(.text-lg) {
+        padding: 12px;
+      }
+
+      h2 {
+        margin-top: 8px;
+      }
     }
   }
 }
